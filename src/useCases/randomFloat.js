@@ -2,4 +2,4 @@ function randomFloat() {
   return Math.random();
 };
 
-module.exports = { randomFloat }
+module.exports = {randomFloat};
