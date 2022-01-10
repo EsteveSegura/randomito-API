@@ -1,0 +1,34 @@
+{
+  "name": "randomito-API",
+  "version": "1.0.0",
+  "description": "API for sharing random numbers on internet",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "jest --collectCoverage --silent --testPathPattern=/test --maxWorkers=1 --forceExit --passWithNoTests"
+  },
+  "jest": {
+    "verbose": true,
+    "roots":[
+      "<rootDir>/src/",
+      "<rootDir>/src/test"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EsteveSegura/randomito-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EsteveSegura/randomito-API/issues"
+  },
+  "homepage": "https://github.com/EsteveSegura/randomito-API#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "jest": "^27.4.7",
+    "morgan": "^1.10.0"
+  }
+}
