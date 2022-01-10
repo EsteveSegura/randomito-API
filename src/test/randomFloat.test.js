@@ -2,7 +2,7 @@ const randomFloat = require('../useCases/randomFloat');
 
 describe('RandomFloat', () => {
   it('should return a random float', () => {
-    const generateRandomFloat = randomFloat.randomFloat();
+    const generateRandomFloat = randomFloat.randomFloat().toString();
 
     expect(typeof generateRandomFloat).toBe('number');
     expect(generateRandomFloat <= 1).toEqual(true);
