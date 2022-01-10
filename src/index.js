@@ -10,7 +10,7 @@ app.use(morgan(`:method :url port=${PORT} :status :res[content-length] - :respon
 
 app.get('/api/v1/number', (req, res) => {
   const value = randomFloat.randomFloat();
-  res.json({value});
+  res.json({value, port: PORT});
 });
 
 app.listen(PORT, () => {
